@@ -1,0 +1,23 @@
+.hero_img {
+    position: relative;
+  }
+  
+  .hero_img img {
+    width: 100%;
+    display: block;
+  }
+  
+  .hero_img::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 300px;
+    background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0.9)
+    );
+    z-index: 1;
+  }

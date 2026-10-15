@@ -1,0 +1,31 @@
+.lower_container {
+  background-color: #232f3e;
+  color: white;
+}
+
+.lower_container ul {
+  display: flex;
+  list-style: none;
+  gap: 5px;
+  padding: 8px 20px;
+  align-items: center;
+}
+
+.lower_container ul li {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.lower_container ul li:hover {
+  border: 1px solid white;
+  border-radius: 3px;
+}
+
+@media screen and (max-width: 576px) {
+  .lower_container ul li:not(:first-child) {
+      display: none;
+  }
+}
